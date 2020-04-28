@@ -13,10 +13,10 @@ $bootstrap-sass-asset-helper: false !default;
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              #68131D;   // #333
-$gray:                   #A05152; // #555
+$gray-dark:              #181818;   // #333
+$gray:                   #3f3f3f; // #555
 $gray-light:             #BF7E6F; // #777
-$gray-lighter:           #D1A6A0; // #eee
+$gray-lighter:           #a0d1cb; // #eee
 
 $brand-primary:         #A22D38; // #337ab7
 $brand-success:         #5cb85c !default;
@@ -394,11 +394,11 @@ $navbar-default-toggle-border-color:       #ddd !default;
 // Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      lighten($gray-light, 15%) !default;
-$navbar-inverse-bg:                         #620916;
+$navbar-inverse-bg:                         #222;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
+$navbar-inverse-link-color:                 #fff;//lighten($gray-light, 15%) !default;
 $navbar-inverse-link-hover-color:           #fff !default;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
@@ -878,7 +878,10 @@ img {
   }
 // override for the 'Home' navigation link
 .navbar-brand {
-  font-size: inherit;
+  font-size: 25px;//inherit;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
   }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY

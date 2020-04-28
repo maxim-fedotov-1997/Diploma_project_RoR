@@ -65,11 +65,11 @@
 
         this.locale = {
             direction: 'ltr',
-            format: 'MM/DD/YYYY',
+            format: 'DD/MM/YYYY',
             separator: ' - ',
-            applyLabel: 'Apply',
-            cancelLabel: 'Cancel',
-            weekLabel: 'W',
+            applyLabel: 'Применить',
+            cancelLabel: 'Отменить',
+            weekLabel: 'Н',
             customRangeLabel: 'Custom Range',
             daysOfWeek: moment.weekdaysMin(),
             monthNames: moment.monthsShort(),
