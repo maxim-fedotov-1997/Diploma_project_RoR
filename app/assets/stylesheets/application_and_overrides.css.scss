@@ -15,12 +15,12 @@ $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              #181818;   // #333
 $gray:                   #3f3f3f; // #555
-$gray-light:             #BF7E6F; // #777
-$gray-lighter:           #a0d1cb; // #eee
+$gray-light:             #6fa5be; // #777
+$gray-lighter:           #9fc1d1; // #eee
 
-$brand-primary:         #A22D38; // #337ab7
+$brand-primary:         #2d57a4; // #337ab7
 $brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
+$brand-info:            #5a88dd !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
@@ -871,6 +871,21 @@ $hr-border:                   $gray-lighter !default;
 
 @import "bootstrap";
 
+h1 {
+  text-align: center;
+}
+.checkbox {
+  margin-left: 20px;
+}
+p {
+  line-height: 1.7em;
+  margin-top: 5px;
+}
+input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
 // make all images responsive by default
 img {
   @extend .img-responsive;

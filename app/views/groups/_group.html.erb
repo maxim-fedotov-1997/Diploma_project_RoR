@@ -1,0 +1,8 @@
+<li>
+  <%= link_to group.name, group %>
+  <% if current_user.admin? && !current_user?(user) && !user.admin? %>
+    | <%= link_to "изменить", edit_group_path(group) %>
+    | <%= link_to "удалить", group, method: :delete,
+                                  data: { confirm: "Вы уверены?" } %>
+  <% end %>
+</li>

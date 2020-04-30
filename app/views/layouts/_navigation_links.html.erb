@@ -2,18 +2,18 @@
 <li><%= link_to "Календарь консультаций", root_path %></li>
 <li><%= link_to "О сайте", pages_about_path %></li>
 <li><%= link_to "Связь с нами", pages_contact_path %></li>
-<% if false %>
-    <% if_logged_in? %>
-        <li><%= link_to "Пользователи", users_path %></li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Аккаунт <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li><%= link_to "Настройки" %></li>
-                <li class="divider"></li>
-                <li><%= link_to "Выйти", logout_path, method: :delete %></li>
-            </ul>
-    <% else %>
-        <li><%= link_to "Войти", login_path %></li>
+<% if logged_in? %>
+    <li><%= link_to "Пользователи", users_path %></li>
+    <li><%= link_to "Группы", groups_path %></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Аккаунт <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li><%= link_to "Профиль", current_user %></li>
+            <li class="divider"></li>
+            <li><%= link_to "Выйти", logout_path, method: :delete %></li>
+        </ul>
+<% else %>
+    <li><%= link_to "Войти", login_path %></li>
 <% end %>
