@@ -5,6 +5,7 @@
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
     <%= f.input :color, as: :select, collection: [['Черный','black'], ['Зеленый','green'], ['Красный','red']] %>
+    <%= f.input :for_group %>
   </div>
 
   <div class="form-actions">

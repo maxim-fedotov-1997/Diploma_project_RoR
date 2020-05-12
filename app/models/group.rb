@@ -1,4 +1,5 @@
 class Group < ApplicationRecord
     has_many :users
-    validates :name, presence :true
+    has_one :event
+    validates :name, presence: :true
 end

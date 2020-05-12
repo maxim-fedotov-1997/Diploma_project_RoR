@@ -1,3 +1,4 @@
+<% if current_user.admin? %>
 $('#remote_container').html('<%= j render "edit" %>');
 $('#edit_event').modal('show');
-
+<% end %>

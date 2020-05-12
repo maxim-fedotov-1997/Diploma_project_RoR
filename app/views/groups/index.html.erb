@@ -1,8 +1,6 @@
-<h1>Все пользователи</h1>
-
+<h1>Все группы</h1>
+<%= link_to '<button type="button">Новая группа</button>'.html_safe, new_group_path %>
 <%= will_paginate @groups %>
-
-<%# X %>
 
 <ul class="groups">
   <%= render @groups %>
