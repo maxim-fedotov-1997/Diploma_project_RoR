@@ -14,11 +14,6 @@
 #  event.color = ['black','green','red', nil].sample
 #  event.save
 #end
-users = [
-	{ name: "Test", email: "test@mail.ru", admin: 1, password_digest: "$2a$12$1ZpP2d34YGPlS5hvMWee3euBzVOSIsTsL4Fw0yKr6jEer3Y28E26O" },
-	{ name: "User", email: "user@mail.ru", admin: 0, password_digest: "$2a$12$mjUvKwlSSr7wKPrxYHFV3.b4/sbjDRGQs8w6RQSwYDIOZbAJPnSi6" },
-]
-
-users.each do |atrributes|
-	User.create(atrributes) unless User.where(atrributes).first
-end
+1.times do
+	User.create(name: 'Test', email:'test@mail.ru', admin: 1, password_digest: '$2a$12$1ZpP2d34YGPlS5hvMWee3euBzVOSIsTsL4Fw0yKr6jEer3Y28E26O')
+end	
