@@ -14,3 +14,5 @@
 #  event.color = ['black','green','red', nil].sample
 #  event.save
 #end
+	User.create( name: 'Test', email: 'test@mail.ru', admin: 1, group_id: 1 )
+	User.create( name: 'User', email: 'user@mail.ru', admin: 0, group_id: 2 )
