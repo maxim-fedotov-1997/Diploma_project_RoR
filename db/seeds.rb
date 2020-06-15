@@ -14,6 +14,3 @@
 #  event.color = ['black','green','red', nil].sample
 #  event.save
 #end
-1.times do
-	User.create(name: 'Test', email:'test@mail.ru', admin: 1, password_digest: '$2a$12$1ZpP2d34YGPlS5hvMWee3euBzVOSIsTsL4Fw0yKr6jEer3Y28E26O')
-end	
