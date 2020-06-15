@@ -14,5 +14,5 @@
 #  event.color = ['black','green','red', nil].sample
 #  event.save
 #end
-	User.create( name: 'Test', email: 'test@mail.ru', admin: 1, group_id: 1 )
-	User.create( name: 'User', email: 'user@mail.ru', admin: 0, group_id: 2 )
+	User.create( name: 'Test', email: 'test@mail.ru', admin: 1, password_digest: '$2a$12$1ZpP2d34YGPlS5hvMWee3euBzVOSIsTsL4Fw0yKr6jEer3Y28E26O', group_id: 1 )
+	User.create( name: 'User', email: 'user@mail.ru', admin: 0, password_digest: '$2a$12$mjUvKwlSSr7wKPrxYHFV3.b4/sbjDRGQs8w6RQSwYDIOZbAJPnSi6', group_id: 2 )
