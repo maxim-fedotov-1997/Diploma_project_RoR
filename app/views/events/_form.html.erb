@@ -1,11 +1,11 @@
 <%= simple_form_for @event, remote: true do |f| %>
   <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :date_range, input_html: { class: "form-control input-sm date-range-picker" } %>
+    <%= f.label 'Название' %> <%= f.input :title %>
+    <%= f.label 'Дата и время'%> <%= f.input :date_range, input_html: { class: "form-control input-sm date-range-picker" } %>
     <%= f.input_field :start, as: :hidden, value: Date.today, class: 'form-control input-sm start_hidden' %>
     <%= f.input_field :end, as: :hidden, value: Date.today, class: 'form-control input-sm end_hidden' %>
-    <%= f.input :color, as: :select, collection: [['Черный','black'], ['Зеленый','green'], ['Красный','red']] %>
-    <%= f.input :for_group %>
+    <%= f.label 'Цвет' %> <%= f.input :color, as: :select, collection: [['Черный','black'], ['Зеленый','green'], ['Красный','red']] %>
+    <%= f.label 'Для группы' %> <%= f.input :for_group %>
   </div>
 
   <div class="form-actions">
